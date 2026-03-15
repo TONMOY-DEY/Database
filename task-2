@@ -1,0 +1,115 @@
+TONMOY KUMAR DEY 
+24-59325-3
+
+1.select ename,sal,comm
+from emp
+where sal>2850
+
+TONMOY KUMAR DEY 
+24-59325-3
+
+2.select ename,sal,deptno
+from emp
+where empno=7566
+
+
+
+TONMOY KUMAR DEY 
+24-59325-3
+
+3.select ename,sal
+from emp
+where sal not between 1500 and 2850
+
+TONMOY KUMAR DEY 
+24-59325-3
+
+4.select ename,job,hiredate
+from emp
+where hiredate between TO_Date('20-February-1981','DD-MON-YYYY') and TO_Date('1-May-1981','DD-MON-YYYY')
+order by  hiredate ASC
+
+TONMOY KUMAR DEY 
+24-59325-3
+
+5.select ename,deptno
+from emp
+where deptno in(10,30)
+order by ename ASC
+
+TONMOY KUMAR DEY 
+24-59325-3
+
+6.select ename "Employee",
+sal "Monthly Salary"
+from emp
+where sal>1500 and deptno in (10,30)
+
+TONMOY KUMAR DEY 
+24-59325-3
+
+7.select ename,hiredate 
+from emp
+where  To_char(hiredate,'YYYY')='1982'
+
+TONMOY KUMAR DEY 
+24-59325-3
+
+8.select ename,job
+from emp
+where mgr is null
+
+TONMOY KUMAR DEY 
+24-59325-3
+
+9.select ename,sal,comm
+from emp
+where comm is not null
+order by sal DESC,comm DESC
+
+TONMOY KUMAR DEY 
+24-59325-3
+
+10.select ename
+from emp
+where substr(ename,3,1)='A'
+
+TONMOY KUMAR DEY 
+24-59325-3
+
+11.select ename
+from emp
+where (length(ename)-length(replace(upper(ename),'L','')))=2
+and (deptno=30 or mgr=7782)
+
+TONMOY KUMAR DEY 
+24-59325-3
+
+12.select ename,job,sal
+from emp
+where job in('CLERK','ANALYST')
+and sal not in(1000,3000,5000)
+
+
+TONMOY KUMAR DEY 
+24-59325-3
+
+13.select ename,sal,comm
+from emp
+where comm>sal*1.10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
